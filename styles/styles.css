@@ -54,16 +54,18 @@ body > header {
 }
 
 
-nav > section {
+nav > a {
   padding: 15px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
-nav > section:hover {
+nav > a:hover {
     background-color: #0a0f0a;
   }
 
