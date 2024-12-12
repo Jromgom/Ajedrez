@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth; 
 }
 
+.imagenGrande {
+    width: 9vw;
+    height: auto;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -39,8 +44,7 @@ body > header {
     text-align: center;
     height: 70%;
     width: 100%;
-    display: flex;
-    font-size: 26px;  
+    display: flex;  
 }
 
 #cabezeraAbajo{
@@ -49,10 +53,9 @@ body > header {
     text-align: center;
 }
 .imagen{
-    width: 45px;
+    width: 2.5vw;
     height: auto;
 }
-
 
 nav > a {
   padding: 15px;
@@ -92,6 +95,7 @@ section > main{
 
 h1{
     margin: auto;
+    font-size: 2rem;
 }
 
 footer {
@@ -102,4 +106,16 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+@media (max-width: 768px) {
+    h4{
+        display: none;
+    }
+    .imagen{
+        width: 4vw;
+        height: auto;
+    }
+    #rey{
+        margin-top: 40%;
+    }
 }
