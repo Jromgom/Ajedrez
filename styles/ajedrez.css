@@ -146,6 +146,9 @@ footer {
 }
 /* Aqui ajustamos el responsive */
 @media (max-width: 768px) {
+    p{
+        font-size: 0.8vw;
+    }
     h4{
         display: none;
     }
@@ -180,4 +183,7 @@ footer {
      h2{
         margin: 0vh;
      }
+     body > section {
+        width: 90vw;
+    }
 }
