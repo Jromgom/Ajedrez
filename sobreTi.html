@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/peon_blanco.png" type="image/png">
+    <title>Ajedrez Fan</title>
+    <link rel="stylesheet" href="styles/sobreti.css">
+</head>
+<body>
+    <header>
+        <!-- Imagen principal de la cabezera -->
+        <section>
+            <a href="index.html">
+                <img class="imagenGrande" id="rey" src="images/rey_blanco.png" >
+            </a>
+        </section>
+        <!-- contenido principal de la cabezera -->
+        <main id="cabezera">
+            <article id="cabezeraArriba">
+                <h1>Ajedrez Fan</h1>
+            </article>
+            <!-- navegador -->
+            <nav id="cabezeraAbajo">
+                <a href="ajedrez.html">
+                        <img class="imagen" src="images/reina_blanca.png">
+                        <h4>Sobre ajedrez</h4>
+                </a>
+                <a href="reglas.html">
+                    <img class="imagen" src="images/caballo_blanco.png">
+                    <h4>Reglas</h4>
+                </a>
+                <a href="maestros.html">
+                    <img class="imagen" src="images/torre_blanca.png">
+                    <h4>Maestros del ajedrez</h4>
+                </a>
+                <a href="problemas.html">
+                    <img class="imagen" src="images/alfil_blanco.png">
+                    <h4>Problemas</h4>
+                </a>
+                <a href="sobreTi.html">
+                    <img class="imagen" src="images/peon_blanco.png">
+                    <h4>Sobre ti</h4>
+                </a>
+            </nav>
+        </main>
+    </header>
+    <section id="principal">
+        <section id="celdaTablero">
+            <main id="tablero">
+                <!-- Aqui empieza el formulario -->
+                <h2 class="h2formulario">Formulario de Contacto</h2>
+                <form action="index.html">
+                    <section>
+                        <label for="fname">Nombre</label>
+                        <br>
+                            <input type="text" required
+                            pattern="([A-ZÑÁÉÍÓÚ][a-zñáéíóú]*)|(([A-ZÑÁÉÍÓÚ][a-zñáéíóú]*)\s([a-zñáéíóú]+\s)*([A-ZÑÁÉÍÓÚ][a-zñáéíóú]*))">
+                        <br>
+                    </section>
+                    <section>
+                        <label for="fname">Apellido</label>
+                        <br>
+                            <input type="text" required
+                            pattern="([A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(?:[-\s][A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)*)(\s[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(?:[-\s][A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)*)?">
+                        <br>
+                    </section>
+                    <section>
+                        <label>Fecha de Nacimiento</label>
+                        <br>
+                            <input type="text" required
+                            pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}$"
+                            title="Formato: DD/MM/AAAA">
+                        <br>
+                    </section>
+                    <section >
+                        <label>Correo</label>
+                        <br>
+                            <input type="text" required
+                            pattern="^[a-z]+[a-z0-9.]*@[a-z]+[a-z.]*\.[a-z]{2,}$">
+                        <br>
+                    </section>
+                    <section>
+                        <label>Ficha favorita</label>
+                        <br>
+                            <input type="text" 
+                        <br>
+                        </section>
+                    <label><input type="checkbox" required><b>Acepto los terminos y la recogida de información</b></label><br>
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
+            </main>
+        </section>
+        
+    </section>
+    <footer>
+        <p>&copy; 2024 Ajedrez fan / Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

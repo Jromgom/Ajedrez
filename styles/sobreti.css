@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
 }
-
+/* deslizamiento lento en la página */
 html {
     scroll-behavior: smooth; 
 }
@@ -17,7 +17,7 @@ html {
     scale: 1.1;
     cursor: pointer;
 }
-
+/* Aqui esta el contenido principal del index */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -28,7 +28,7 @@ body {
     color: #333;
     background-color: #c4c4c4;
 }
-
+/* Aqui empezamos a modificar la cabezera */
 body > header {
     background: #2e2e2e;
     color: #fff;
@@ -36,25 +36,6 @@ body > header {
     width: 100%;
     height: 100%;
     display: flex;
-}
-
-#estrella1{
-    width: 2vw;
-    height: auto;
-    cursor: pointer;
-}
-#estrella1:hover{
-    scale: 1.5;
-}
-.estrellas{
-    width: 7vw;
-    height: auto;
-    cursor: pointer;
-    margin: 2vh;
-
-}
-.estrellas:hover{
-    scale: 1.5;
 }
 
 #cabezera{
@@ -81,22 +62,6 @@ body > header {
     height: auto;
 }
 
-.imagenCentral{
-    width: 20vw;
-    height: auto;
-    border: 2px #333;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.452);
-}
-
-#dificultad{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.452);
-    background-color: #616161;
-}
-
 nav > a {
   padding: 15px;
   display: flex;
@@ -111,65 +76,44 @@ nav > a {
 nav > a:hover {
     background-color: #0a0f0a;
   }
-
+/* Aqui modificamos el contenido principal */
 #principal{
     display: flex;
     align-items: center;
     padding: 20px;
     background-color: #c4c4c4;
     width: 100%;
-    height: 75vh;
+    height: 74vh;
     justify-content: center;
+    background-image: url(../images/fondoTablero.png);
 }
 
 #celdaTablero{
     background-color: #333;
-    width: 550px;
-    height: 550px;
-    padding: 20px;
+    width: 500px;
+    height: 500px;
+    
     cursor: pointer;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.452);
     border-radius: 8px;
     display: flex;
     align-items: center;
     margin: auto;
-    margin: 4vw;
 }
 
 #tablero{
     margin: auto;
-    width: 500px;
-    height: 500px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
-    background-color: #fff;
+    width: 450px;
+    height: 450px;
+    background-color: #dddddd;
     border: thin solid black;
+    text-align: center;
 }
 
 #tablero > div{
     border: thin solid black;
 }
-
-.color2{
-    background: linear-gradient(to bottom, #743f36e8, #412823f1);
-}
-
-.color1{
-    background: linear-gradient(to bottom, #ffe89de3, #c9b67a);
-}
-
-.ficha{
-    width: 60px;
-    height: 60px;
-    scale: 1.1;
-}
-
-.ficha:hover{
-    transform: scale(1.05);
-}
-
+/* Aqui modificamos algunos textos */
 h1{
     margin: auto;
     font-size: 3vw;
@@ -180,6 +124,16 @@ h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h2{
+    margin: 5vh;
+}
+
+#enviar{
+    width: 60px;
+    height: 30px;
+    margin: 3vh;
+}
+/* Aqui modificamos el pie de página */
 footer {
     text-align: center;
     padding: 30px 0;
@@ -188,6 +142,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Aqui ajustamos el responsive */
 @media (max-width: 768px) {
     h4{
         display: none;
@@ -196,46 +151,43 @@ footer {
         width: 4vw;
         height: auto;
     }
-    #rey{
-        margin-top: 40%;
-    }
+    
     #cabezeraArriba{
         height: 60%;
         width: 100%;
     }
     
+    #rey{
+        margin-top: 40%;
+    }
+
     #cabezeraAbajo{
         height: 40%;
     }
+
     #tablero{
         width: 300px;
         height: 300px;
         margin: auto;
     }
-    .ficha{
-        width: 35px;
-        height: 35px;
-        scale: 1.1;
-    }
+
     #celdaTablero{
         width: 350px;
         height: 350px;
     }
-    .imagenCentral{
-       display: none;
-    }
+
     #principal{
         display: flex;
         flex-direction: column;
     }
-    #dificultad{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 30vw;
+
+    h2{
+        margin: 0vh;
     }
-    #estrella1{
-        margin: 2vw;
+    
+    #enviar{
+        width: 60px;
+        height: 30px;
+        margin: 1vh;
     }
 }
