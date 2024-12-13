@@ -12,6 +12,10 @@ html {
     width: 9vw;
     height: auto;
 }
+.imagenGrande:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
 
 body {
     font-family: 'Arial', sans-serif;
